@@ -1,0 +1,39 @@
+<html>
+<head>
+
+<script type="text/javascript" src="jquery-1.8.3.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+$( document ).ready(function() {
+var dvPassport = document.getElementById("fname");
+ dvPassport.style.display = "none";
+});
+
+
+function ShowHideDiv() {
+        var chkYes = document.getElementById("my");
+        var dvPassport = document.getElementById("fname");
+        dvPassport.style.display = chkYes.checked ? "block" : "none";
+    }
+
+</script>
+
+Some text...
+
+<form>
+  
+  <input type="radio" id="my" name ="test" onchange="ShowHideDiv()">Show<br>
+  <input type="radio" id="myradio1" name = "test" onchange="ShowHideDiv()">hide<br>
+  
+<div id = "fname" style="display:none;">
+  First name:<br>
+  <input type="text" name="firstname" id="firstname">
+  </div>
+  
+  
+</form>
+
+
+</body>
+</html>
