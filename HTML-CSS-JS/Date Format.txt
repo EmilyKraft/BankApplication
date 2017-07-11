@@ -1,2 +1,0 @@
-String string = "2011-03-22";
-Date date = new SimpleDateFormat("yyyy-MM-dd").parse(string);
